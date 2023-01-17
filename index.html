@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GenerateForm</title>
     <link
       rel="stylesheet"
@@ -14,14 +14,12 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="stylesheet.css" />
-  </head>
-  <body>
-    <script src="form.js"></script>
-
-    <div class="main">
-      <div class="first">
-        <h2>Form Generator</h2>
-        <div class="bt">
+</head>
+<body>
+  <script src="form.js"></script>
+    <nav class="navbar navbar-light bg-light" id="navbar">
+        <h1>Form Generator</h1>
+        <form class="form-inline">
           <button
             class="btn btn-outline-success me-2"
             id="btn1"
@@ -38,29 +36,37 @@
           >
             Add TextFeild
           </button>
-          <button class="btn btn-outline-success me-2" id="btn3" type="button">
+
+          <button
+            class="btn btn-outline-success me-2"
+            id="btn3"
+            type="button"
+            onclick="myFunction2()"
+          >
             Add TextArea
           </button>
-          <button class="btn btn-outline-success me-2" id="btn4" type="button">
-            Add ChechBox
-          </button>
-          <button class="btn btn-outline-success me-2" id="btn5" type="button">
+
+          <button
+            class="btn btn-outline-success me-2"
+            id="btn4"
+            type="button"
+            onclick="myFunction3()"
+          >
             Add Radio Button
           </button>
-          <button class="btn btn-outline-success me-2" id="btn6" type="button">
-            Add DropDown
-          </button>
-        </div>
-      </div>
-      <div class="second" id="s1">
-        <h1 id="demo"></h1>
-        <div id="textF">
-          <!-- <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname" /><br /><br /> -->
-        </div>
 
-        <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
-      </div>
-    </div>
-  </body>
+          <button
+            class="btn btn-outline-success me-2"
+            id="btn5"
+            type="button"
+            onclick="myFunction4()"
+          >
+            Add checkbox
+          </button>
+          
+          <!-- <button class="btn btn-outline-success" type="button">Add ChechBox</button> -->
+          <button class="btn  btn-outline-success" type="button">Add DropDown</button>
+        </form>
+      </nav>
+</body>
 </html>
