@@ -77,7 +77,15 @@ function myFunction4() {
 }
 
 function myFunction5() {
-      
+
+  // var e1=document.getElementById("s1");
+  // var lbl2 = document.createElement('option');
+  // const element = prompt("Write Lable:");
+  // lbl2.text = element;
+  // e1.add(Option);
+
+
+
   const lbl = document.createElement("label");
   const element = prompt("Write Lable:");
   lbl.innerText = element;
