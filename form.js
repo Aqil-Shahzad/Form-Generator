@@ -94,10 +94,12 @@ function myFunction5() {
 
 function myFunction6() {
   const lbl = document.createElement("input");
+  const lbl2 = document.createElement("br");
   // const element = prompt("Write a Title:");
   lbl.type="submit";
   lbl.value="Submit";
   // lbl.innerText = element;
+  document.body.appendChild(lbl2);
   document.body.appendChild(lbl);
 }
 
