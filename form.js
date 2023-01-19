@@ -73,7 +73,7 @@ function myFunction2() {
   document.body.appendChild(lbl1);
   const btn = document.createElement("button");
   btn.style =
-  "color:red; background-color:white ; border-radius:60% ;width:2% ; margin-left:25px";
+    "color:red; background-color:white ; border-radius:60% ;width:2% ; margin-left:25px";
   btn.innerText = "x";
   document.body.appendChild(btn);
   document.body.appendChild(lbl3);
@@ -124,7 +124,7 @@ function myFunction3() {
   document.body.appendChild(option2);
   const btn = document.createElement("button");
   btn.style =
-  "color:red; background-color:white ; border-radius:60% ;width:2% ; margin-left:25px";
+    "color:red; background-color:white ; border-radius:60% ;width:2% ; margin-left:25px";
   btn.innerText = "x";
   document.body.appendChild(btn);
   document.body.appendChild(lbl5);
@@ -160,7 +160,7 @@ function myFunction4() {
   document.body.appendChild(lbl2);
   const btn = document.createElement("button");
   btn.style =
-  "color:red; background-color:white ; border-radius:60% ;width:2% ; margin-left:25px";
+    "color:red; background-color:white ; border-radius:60% ;width:2% ; margin-left:25px";
   btn.innerText = "x";
   btn.id = "b1";
   document.body.appendChild(btn);
@@ -197,32 +197,37 @@ function myFunction5() {
   lbl1.append(op3);
   document.body.appendChild(lbl);
   document.body.appendChild(lbl1);
+  const lbl2 = document.createElement("br");
+  lbl2.id = "f5c";
   const btn = document.createElement("button");
   btn.style =
-  "color:red; background-color:white ; border-radius:60% ;width:2% ; margin-left:25px";
+    "color:red; background-color:white ; border-radius:60% ;width:2% ; margin-left:25px";
   btn.innerText = "x";
   btn.id = "b1";
   document.body.appendChild(btn);
+  document.body.appendChild(lbl2);
   btn.onclick = function () {
     var element = document.getElementById("f5a");
     var element1 = document.getElementById("f5b");
+    var element2 = document.getElementById("f5c");
     element.remove();
     element1.remove();
+    element2.remove();
     btn.remove();
   };
 }
 
 function myFunction6() {
   const lbl = document.createElement("input");
-  lbl.id="f6a";
+  lbl.id = "f6a";
   const lbl2 = document.createElement("br");
-  lbl2.id="f6b";
+  lbl2.id = "f6b";
   lbl.type = "submit";
   lbl.value = "Submit";
   document.body.appendChild(lbl);
   const btn = document.createElement("button");
   btn.style =
-  "color:red; background-color:white ; border-radius:60% ;width:2% ; margin-left:25px";
+    "color:red; background-color:white ; border-radius:60% ;width:2% ; margin-left:25px";
   btn.innerText = "x";
   btn.id = "b1";
   document.body.appendChild(btn);
@@ -234,5 +239,4 @@ function myFunction6() {
     element1.remove();
     btn.remove();
   };
-  
 }
