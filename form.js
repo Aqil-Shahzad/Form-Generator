@@ -119,7 +119,7 @@ function myFunction2() {
 
   const btn = document.createElement("button");
   btn.style =
-    "color:white; background-color:red ; border-radius:60% ;width:2% ; margin-left:25px";
+    "color:white; background-color:red ; border-radius:60% ;width:2% ; margin-left:10px";
   btn.innerText = "x";
 
   const btn1 = document.createElement("button");
@@ -326,7 +326,6 @@ function myFunction5() {
   const lbl2 = document.createElement("br");
   lbl2.id = "f5c";
   const btn = document.createElement("button");
-  btn.type="&ShortUpArrow";
   btn.style =
     "color:white; background-color:red ; border-radius:60% ;width:2% ; margin-left:10px";
   btn.innerText = "x";
@@ -372,7 +371,7 @@ function myFunction6() {
   e1.append(lbl);
   const btn = document.createElement("button");
   btn.style =
-    "color:red; background-color:white ; border-radius:60% ;width:2% ; margin-left:25px";
+    "color:white; background-color:red ; border-radius:60% ;width:2% ; margin-left:25px";
   btn.innerText = "x";
   btn.id = "b1";
   e1.append(btn);
