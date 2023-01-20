@@ -12,8 +12,14 @@ body{
     /* background-color: aqua; */
     /* text-align: center; */
 }
-/* #s1{
+/* #s2{
     height: 30vh;
     left: 30%;
     background-color: aqua;
 } */
+.main{
+    position: relative;
+    left: 60px;
+    /* background-color: aqua;
+    border: 5px solid red; */
+}
