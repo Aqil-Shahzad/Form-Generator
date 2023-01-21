@@ -1,7 +1,7 @@
 function myFunction() {
-  const e2 = document.getElementById("s1");
+  // const e2 = document.getElementById("s1");
   const e1 = document.createElement("div");
-  e1.id="l1";
+  e1.id = "l1";
   const lbl = document.createElement("h2");
   const element = prompt("Write a Title:");
   if (element == null) {
@@ -21,16 +21,17 @@ function myFunction() {
   const btn1 = document.createElement("button");
   btn1.style =
     "color:white; background-color:green ; border-radius:70% ;width:2% ;margin-left:10px";
-  btn1.innerText = "^";
+  btn1.innerText = "D";
   const btn2 = document.createElement("button");
   btn2.style =
     "color:red; background-color:darkblue ; border-radius:70% ;width:2% ;margin-left:20px";
-  btn2.innerText = ">";
+  btn2.innerText = "U";
   e1.append(btn2);
   e1.append(btn);
   e1.append(btn1);
   e1.append(lbl2);
-e2.append(e1);
+  document.body.append(e1);
+  // e2.append(e1);
   btn.onclick = function () {
     e1.remove();
     // var element = document.getElementById("fa");
@@ -41,10 +42,22 @@ e2.append(e1);
     // btn1.remove();
     // btn2.remove();
   };
-}
 
+  btn2.onclick = function () {
+    var wrapper = this.parentElement;
+    if (wrapper.previousElementSibling)
+      wrapper.parentNode.insertBefore(wrapper, wrapper.previousElementSibling);
+  };
+
+  btn1.onclick = function () {
+    var wrapper = this.parentElement;
+    if (wrapper.nextElementSibling)
+      wrapper.parentNode.insertBefore(wrapper.nextElementSibling, wrapper);
+  };
+}
+// Add Text Feild
 function myFunction1() {
-  const e2 = document.getElementById("s2");
+  // const e2 = document.getElementById("s2");
   const e1 = document.createElement("div");
   const lbl = document.createElement("label");
   const element = prompt("Write Lable:");
@@ -71,34 +84,37 @@ function myFunction1() {
   const btn1 = document.createElement("button");
   btn1.style =
     "color:white; background-color:green ; border-radius:70% ;width:2% ;margin-left:10px";
-  btn1.innerText = "^";
+  btn1.innerText = "D";
   const btn2 = document.createElement("button");
   btn2.style =
     "color:red; background-color:darkblue ; border-radius:70% ;width:2% ;margin-left:20px";
-  btn2.innerText = ">";
+  btn2.innerText = "U";
   e1.append(btn2);
   e1.append(btn);
   e1.append(btn1);
   e1.append(lbl2);
-e2.append(e1);
+  document.body.append(e1);
+  // e2.append(e1);
   btn.onclick = function () {
-    // var element1 = document.getElementById("f1a");
-    // var element2 = document.getElementById("f1b");
-    // var element3 = document.getElementById("f1c");
-    // var element4 = document.getElementById("f1d");
-    // element1.remove();
-    // element2.remove();
-    // element3.remove();
-    // element4.remove();
-    // btn.remove();
-    // btn1.remove();
-    // btn2.remove();
     e1.remove();
+  };
+
+  btn2.onclick = function () {
+    var wrapper = this.parentElement;
+    if (wrapper.previousElementSibling)
+      wrapper.parentNode.insertBefore(wrapper, wrapper.previousElementSibling);
+  };
+
+  btn1.onclick = function () {
+    var wrapper = this.parentElement;
+    if (wrapper.nextElementSibling)
+      wrapper.parentNode.insertBefore(wrapper.nextElementSibling, wrapper);
   };
 }
 
+//Add Text Area
 function myFunction2() {
-  const e2 = document.getElementById("s3");
+  // const e2 = document.getElementById("s3");
   const e1 = document.createElement("div");
   const lbl = document.createElement("label");
   const element = prompt("Write Lable:");
@@ -125,36 +141,38 @@ function myFunction2() {
   const btn1 = document.createElement("button");
   btn1.style =
     "color:white; background-color:green ; border-radius:70% ;width:2% ;margin-left:10px";
-  btn1.innerText = "^";
+  btn1.innerText = "D";
 
   const btn2 = document.createElement("button");
   btn2.style =
     "color:red; background-color:darkblue ; border-radius:70% ;width:2% ;margin-left:20px";
-  btn2.innerText = ">";
+  btn2.innerText = "U";
 
   e1.append(btn2);
   e1.append(btn);
   e1.append(btn1);
   e1.append(lbl3);
-  e2.append(e1);
+  document.body.append(e1);
+  // e2.append(e1);
   btn.onclick = function () {
-    // var element1 = document.getElementById("f2a");
-    // var element2 = document.getElementById("f2b");
-    // var element3 = document.getElementById("f2c");
-    // var element4 = document.getElementById("f2d");
-    // element1.remove();
-    // element2.remove();
-    // element3.remove();
-    // element4.remove();
-    // btn.remove();
-    // btn1.remove();
-    // btn2.remove();
     e1.remove();
+  };
+  btn2.onclick = function () {
+    var wrapper = this.parentElement;
+    if (wrapper.previousElementSibling)
+      wrapper.parentNode.insertBefore(wrapper, wrapper.previousElementSibling);
+  };
+
+  btn1.onclick = function () {
+    var wrapper = this.parentElement;
+    if (wrapper.nextElementSibling)
+      wrapper.parentNode.insertBefore(wrapper.nextElementSibling, wrapper);
   };
 }
 
+//Add Radio
 function myFunction3() {
-  const e2 = document.getElementById("s4");
+  // const e2 = document.getElementById("s4");
   const e1 = document.createElement("div");
   const lbl = document.createElement("label");
   const element = prompt("Write Lable:");
@@ -204,40 +222,37 @@ function myFunction3() {
   const btn1 = document.createElement("button");
   btn1.style =
     "color:white; background-color:green ; border-radius:70% ;width:2% ;margin-left:10px";
-  btn1.innerText = "^";
+  btn1.innerText = "D";
 
   const btn2 = document.createElement("button");
   btn2.style =
     "color:red; background-color:darkblue ; border-radius:70% ;width:2% ;margin-left:20px";
-  btn2.innerText = ">";
+  btn2.innerText = "U";
 
   e1.append(btn2);
   e1.append(btn);
   e1.append(btn1);
   e1.append(lbl5);
-  e2.append(e1);
+  document.body.append(e1);
+  // e2.append(e1);
   btn.onclick = function () {
-    // var element1 = document.getElementById("f3a");
-    // var element2 = document.getElementById("f3b");
-    // var element3 = document.getElementById("f3c");
-    // var element4 = document.getElementById("f3d");
-    // var element5 = document.getElementById("f3e");
-    // var element6 = document.getElementById("f3f");
-    // element1.remove();
-    // element2.remove();
-    // element3.remove();
-    // element4.remove();
-    // element5.remove();
-    // element6.remove();
-    // btn.remove();
-    // btn1.remove();
-    // btn2.remove();
     e1.remove();
   };
-}
 
+  btn2.onclick = function () {
+    var wrapper = this.parentElement;
+    if (wrapper.previousElementSibling)
+      wrapper.parentNode.insertBefore(wrapper, wrapper.previousElementSibling);
+  };
+
+  btn1.onclick = function () {
+    var wrapper = this.parentElement;
+    if (wrapper.nextElementSibling)
+      wrapper.parentNode.insertBefore(wrapper.nextElementSibling, wrapper);
+  };
+}
+//Add Checkbox
 function myFunction4() {
-  const e2 = document.getElementById("s5");
   const e1 = document.createElement("div");
   const lbl = document.createElement("label");
   const element = prompt("Write Lable:");
@@ -262,34 +277,36 @@ function myFunction4() {
   const btn1 = document.createElement("button");
   btn1.style =
     "color:white; background-color:green ; border-radius:70% ;width:2% ;margin-left:10px";
-  btn1.innerText = "^";
+  btn1.innerText = "D";
 
   const btn2 = document.createElement("button");
   btn2.style =
     "color:red; background-color:darkblue ; border-radius:70% ;width:2% ;margin-left:20px";
-  btn2.innerText = ">";
+  btn2.innerText = "U";
 
   e1.append(btn2);
   e1.append(btn);
   e1.append(btn1);
   e1.append(lbl2);
-  e2.append(e1);
+  document.body.append(e1);
   btn.onclick = function () {
-    // var element = document.getElementById("f4a");
-    // var element1 = document.getElementById("f4b");
-    // var element2 = document.getElementById("f4c");
-    // element.remove();
-    // element1.remove();
-    // element2.remove();
-    // btn.remove();
-    // btn1.remove();
-    // btn2.remove();
     e1.remove();
+  };
+
+  btn2.onclick = function () {
+    var wrapper = this.parentElement;
+    if (wrapper.previousElementSibling)
+      wrapper.parentNode.insertBefore(wrapper, wrapper.previousElementSibling);
+  };
+
+  btn1.onclick = function () {
+    var wrapper = this.parentElement;
+    if (wrapper.nextElementSibling)
+      wrapper.parentNode.insertBefore(wrapper.nextElementSibling, wrapper);
   };
 }
 
 function myFunction5() {
-  const e2 = document.getElementById("s6");
   const e1 = document.createElement("div");
   const lbl = document.createElement("label");
   const element = prompt("Write Lable:");
@@ -333,34 +350,35 @@ function myFunction5() {
   const btn1 = document.createElement("button");
   btn1.style =
     "color:white; background-color:green ; border-radius:70% ;width:2% ;margin-left:10px";
-  btn1.innerText = "^";
+  btn1.innerText = "D";
 
   const btn2 = document.createElement("button");
   btn2.style =
     "color:red; background-color:darkblue ; border-radius:70% ;width:2% ;margin-left:20px";
-  btn2.innerText = ">";
+  btn2.innerText = "U";
 
   e1.append(btn2);
   e1.append(btn);
   e1.append(btn1);
   e1.append(lbl2);
-  e2.append(e1);
+  document.body.append(e1);
   btn.onclick = function () {
-    // var element = document.getElementById("f5a");
-    // var element1 = document.getElementById("f5b");
-    // var element2 = document.getElementById("f5c");
-    // element.remove();
-    // element1.remove();
-    // element2.remove();
-    // btn.remove();
-    // btn1.remove();
-    // btn2.remove();
     e1.remove();
+  };
+  btn2.onclick = function () {
+    var wrapper = this.parentElement;
+    if (wrapper.previousElementSibling)
+      wrapper.parentNode.insertBefore(wrapper, wrapper.previousElementSibling);
+  };
+
+  btn1.onclick = function () {
+    var wrapper = this.parentElement;
+    if (wrapper.nextElementSibling)
+      wrapper.parentNode.insertBefore(wrapper.nextElementSibling, wrapper);
   };
 }
 
 function myFunction6() {
-  const e2 = document.getElementById("s7");
   const e1 = document.createElement("div");
   const lbl = document.createElement("input");
   lbl.id = "f6a";
@@ -376,13 +394,8 @@ function myFunction6() {
   btn.id = "b1";
   e1.append(btn);
   e1.append(lbl2);
-  e2.append(e1);
+  document.body.append(e1);
   btn.onclick = function () {
-    // var element = document.getElementById("f6a");
-    // var element1 = document.getElementById("f6b");
-    // element.remove();
-    // element1.remove();
-    // btn.remove();
     e1.remove();
   };
 }
